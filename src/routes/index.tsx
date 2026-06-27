@@ -231,9 +231,9 @@ function Nav({
       <nav className="glass mx-auto flex max-w-6xl items-center justify-between rounded-2xl px-4 py-3 sm:px-6">
         <a href="#top" className="flex items-center gap-2 font-display text-lg font-bold">
           <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-brand text-primary-foreground">
-            A
+            R
           </span>
-          <span className="hidden sm:inline">Alex Morgan</span>
+          <span className="hidden sm:inline">Robab</span>
         </a>
 
         <ul className="hidden items-center gap-7 md:flex">
@@ -318,14 +318,13 @@ function Hero() {
           </div>
 
           <h1 className="font-display text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
-            I build software{" "}
-            <span className="text-gradient">with the eye of a designer</span> and the rigor of an
-            engineer.
+            Hi, I'm Robab —{" "}
+            <span className="text-gradient">Full Stack Web Developer & Graphic Designer.</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            I'm Alex — a full stack web developer and graphic designer based in Berlin. I help
-            ambitious teams ship products that feel as good as they perform.
+            I design and build modern web applications end-to-end — from clean React interfaces and
+            Node.js APIs to thoughtful UI/UX and brand visuals that help products stand out.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -356,7 +355,7 @@ function Hero() {
           <div className="glass-strong relative overflow-hidden rounded-[2rem] p-2 animate-float">
             <img
               src={portrait}
-              alt="Portrait of Alex Morgan"
+              alt="Portrait of Robab"
               width={900}
               height={1100}
               className="h-full w-full rounded-[1.6rem] object-cover"
@@ -405,31 +404,41 @@ function SectionHeader({
 function About() {
   return (
     <section id="about" className="mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32">
-      <SectionHeader eyebrow="About" title="A craftsman across code and pixels" />
+      <SectionHeader eyebrow="About" title="Developer by training, designer by instinct" />
       <div className="mt-14 grid gap-6 lg:grid-cols-3">
         <div className="glass-strong rounded-3xl p-8 lg:col-span-2">
           <p className="text-lg leading-relaxed text-foreground">
-            For the last six years I've lived at the seam between engineering and design. I write
-            production-grade JavaScript and Node services by day, then sketch logos and pour over
-            typography by night.
+            I'm Robab — a Full Stack Web Developer and Graphic Designer who loves turning ideas
+            into polished, production-ready products. I work across the MERN stack (MongoDB,
+            Express, React, Node.js) and pair it with a strong eye for typography, color, and
+            layout.
           </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
-            My favorite projects are the ones where both disciplines are needed — where you can
-            unblock a backend bug in the morning, redesign the empty state in the afternoon, and
-            ship them both before the standup. I care about details: the easing of a hover, the
-            weight of a label, the schema you'll thank yourself for in six months.
+            Over the last few years I've shipped real-world projects including an e-commerce
+            platform, a job portal system, and a restaurant website — handling everything from
+            database design and REST APIs to UI/UX, branding, and responsive frontends. I care
+            about clean code, accessible interfaces, and design details that make a product feel
+            considered.
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
-            <Highlight icon={Code2} title="Engineering first" desc="Type-safe, tested, accessible." />
-            <Highlight icon={Palette} title="Design native" desc="Type, color, motion, identity." />
+            <Highlight
+              icon={Code2}
+              title="Full Stack Engineer"
+              desc="React, Node.js, Express, MongoDB."
+            />
+            <Highlight
+              icon={Palette}
+              title="Designer at heart"
+              desc="UI/UX, branding, and visual systems."
+            />
           </div>
         </div>
         <div className="glass-strong flex flex-col gap-4 rounded-3xl p-8">
           <h3 className="font-display text-xl font-semibold">Quick facts</h3>
-          <Fact label="Based in" value="Berlin, DE" />
-          <Fact label="Working since" value="2019" />
-          <Fact label="Languages" value="EN · DE · FR" />
-          <Fact label="Open to" value="Remote · Hybrid" />
+          <Fact label="Name" value="Robab" />
+          <Fact label="Role" value="Full Stack & Design" />
+          <Fact label="Stack" value="MERN + Tailwind" />
+          <Fact label="Open to" value="Remote · Freelance" />
           <a
             href="#contact"
             className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-brand hover:underline"
@@ -682,9 +691,9 @@ function Contact() {
           <p className="text-sm text-muted-foreground">
             Prefer email or a quick call? Use whichever works best for you.
           </p>
-          <ContactRow icon={Mail} label="Email" value="hello@alexmorgan.studio" />
-          <ContactRow icon={Phone} label="Phone" value="+49 30 1234 5678" />
-          <ContactRow icon={MapPin} label="Studio" value="Mitte, Berlin" />
+          <ContactRow icon={Mail} label="Email" value="hello@robab.dev" />
+          <ContactRow icon={Phone} label="Phone" value="Available on request" />
+          <ContactRow icon={MapPin} label="Working" value="Remote · Worldwide" />
           <div className="mt-auto flex gap-3 pt-4">
             <SocialIcon icon={Github} label="GitHub" />
             <SocialIcon icon={Linkedin} label="LinkedIn" />
@@ -807,7 +816,7 @@ function Footer() {
     <footer className="border-t border-border px-4 py-10 sm:px-6">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row">
         <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Alex Morgan. Designed & built with care.
+          © 2026 Robab. All rights reserved.
         </p>
         <div className="flex items-center gap-2 text-xs text-muted-foreground">
           <Database className="h-3 w-3" />
