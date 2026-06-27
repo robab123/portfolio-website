@@ -77,18 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Alex Morgan — Full Stack Developer & Graphic Designer" },
+      { title: "Robab — Full Stack Web Developer & Graphic Designer" },
       {
         name: "description",
         content:
-          "Premium portfolio of Alex Morgan, a full stack web developer and graphic designer crafting performant interfaces and distinctive brand systems.",
+          "Portfolio of Robab, a Full Stack Web Developer and Graphic Designer building modern MERN stack applications and thoughtful UI/UX & brand design.",
       },
-      { name: "author", content: "Alex Morgan" },
-      { property: "og:title", content: "Alex Morgan — Full Stack Developer & Graphic Designer" },
+      { name: "author", content: "Robab" },
+      { property: "og:title", content: "Robab — Full Stack Web Developer & Graphic Designer" },
       {
         property: "og:description",
         content:
-          "Premium portfolio of Alex Morgan, a full stack web developer and graphic designer.",
+          "Portfolio of Robab — modern MERN stack web apps and thoughtful UI/UX & brand design.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
