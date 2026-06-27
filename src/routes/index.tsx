@@ -363,7 +363,7 @@ function Hero() {
             <div className="glass absolute bottom-4 left-4 right-4 flex items-center justify-between rounded-2xl p-3">
               <div>
                 <p className="text-xs text-muted-foreground">Currently building</p>
-                <p className="text-sm font-semibold">Lumen v3.0</p>
+                <p className="text-sm font-semibold">Restaurant Website</p>
               </div>
               <Sparkles className="h-5 w-5 text-brand" />
             </div>
