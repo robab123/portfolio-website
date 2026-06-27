@@ -27,25 +27,24 @@ import {
 } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import portrait from "@/assets/portrait.jpg";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
-import project4 from "@/assets/project-4.jpg";
+import projectEcommerce from "@/assets/project-2.jpg";
+import projectJob from "@/assets/project-1.jpg";
+import projectRestaurant from "@/assets/project-restaurant.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Alex Morgan — Full Stack Developer & Graphic Designer" },
+      { title: "Robab — Full Stack Web Developer & Graphic Designer" },
       {
         name: "description",
         content:
-          "Portfolio of Alex Morgan — building performant full stack web apps with React, Node.js, and MongoDB, plus distinctive brand and graphic design systems.",
+          "Portfolio of Robab — a full stack web developer and graphic designer building performant web apps with React, Node.js, and MongoDB, paired with thoughtful UI/UX and brand design.",
       },
-      { property: "og:title", content: "Alex Morgan — Full Stack Developer & Graphic Designer" },
+      { property: "og:title", content: "Robab — Full Stack Web Developer & Graphic Designer" },
       {
         property: "og:description",
         content:
-          "Portfolio of Alex Morgan — performant full stack web apps and distinctive brand design.",
+          "Portfolio of Robab — performant full stack web apps and thoughtful UI/UX & brand design.",
       },
       { property: "og:url", content: "/" },
     ],
@@ -64,78 +63,69 @@ const navItems = [
 ];
 
 const skills = [
-  { name: "React", level: 95, group: "Frontend" },
-  { name: "JavaScript", level: 95, group: "Frontend" },
-  { name: "HTML / CSS", level: 98, group: "Frontend" },
-  { name: "Tailwind CSS", level: 92, group: "Frontend" },
+  { name: "HTML", level: 98, group: "Frontend" },
+  { name: "CSS", level: 96, group: "Frontend" },
+  { name: "JavaScript", level: 94, group: "Frontend" },
+  { name: "React", level: 93, group: "Frontend" },
+  { name: "Tailwind CSS", level: 95, group: "Frontend" },
   { name: "Node.js", level: 90, group: "Backend" },
   { name: "Express.js", level: 88, group: "Backend" },
   { name: "MongoDB", level: 85, group: "Backend" },
-  { name: "REST / GraphQL", level: 82, group: "Backend" },
-  { name: "Graphic Design", level: 90, group: "Design" },
-  { name: "Figma", level: 92, group: "Design" },
-  { name: "Brand Systems", level: 88, group: "Design" },
-  { name: "Motion / Prototyping", level: 80, group: "Design" },
+  { name: "Graphic Design", level: 92, group: "Design" },
+  { name: "UI/UX Design", level: 90, group: "Design" },
 ];
 
 const projects = [
   {
-    title: "Lumen Analytics",
-    tag: "SaaS Dashboard",
-    desc: "A real-time analytics platform with custom charts, role-based access, and a design system serving 12k+ users.",
-    stack: ["React", "Node.js", "MongoDB", "D3"],
-    img: project1,
+    title: "E-Commerce Platform",
+    tag: "Full Stack Web App",
+    desc: "A modern online store with product catalog, cart, secure checkout, and a custom admin dashboard for inventory and orders.",
+    stack: ["React", "Node.js", "Express", "MongoDB"],
+    img: projectEcommerce,
   },
   {
-    title: "Pasipun Atelier",
-    tag: "E-commerce",
-    desc: "Editorial fashion store with headless commerce, custom checkout, and content-driven storytelling.",
-    stack: ["React", "Express", "Stripe"],
-    img: project2,
+    title: "Job Portal System",
+    tag: "Full Stack Web App",
+    desc: "A two-sided platform for candidates and recruiters with role-based auth, application tracking, and a powerful job search.",
+    stack: ["React", "Node.js", "Express", "MongoDB"],
+    img: projectJob,
   },
   {
-    title: "Ceurn Identity",
-    tag: "Brand System",
-    desc: "Full brand identity and guidelines for a boutique investment firm — logo, type, motion, and digital toolkit.",
-    stack: ["Figma", "Illustrator", "After Effects"],
-    img: project3,
-  },
-  {
-    title: "Pulse Fitness",
-    tag: "Mobile App",
-    desc: "Workout tracker with adaptive plans, social challenges, and an offline-first sync engine.",
-    stack: ["React Native", "Node.js", "MongoDB"],
-    img: project4,
+    title: "Restaurant Website",
+    tag: "Web Design & Development",
+    desc: "An elegant restaurant site with menu, reservations, and a story-driven landing page — designed and developed end-to-end.",
+    stack: ["React", "Tailwind CSS", "UI/UX"],
+    img: projectRestaurant,
   },
 ];
 
 const experience = [
   {
-    year: "2023 — Present",
-    role: "Senior Full Stack Developer",
-    company: "Northwind Studio",
-    desc: "Leading a small team building product surfaces for design-led B2B clients. Owning architecture, DX, and brand.",
+    year: "2024 — Present",
+    role: "Freelance Full Stack Developer & Designer",
+    company: "Independent",
+    desc: "Designing and shipping full stack web applications for startups and small businesses — from brand and UI to MongoDB-backed APIs.",
     icon: Rocket,
   },
   {
-    year: "2021 — 2023",
-    role: "Full Stack Developer & Designer",
-    company: "Halo Labs",
-    desc: "Shipped 14 production apps across React + Node, while designing the brand systems that wrapped them.",
+    year: "2022 — 2024",
+    role: "Full Stack Web Developer",
+    company: "Client Projects",
+    desc: "Built production MERN stack applications including e-commerce, job portal, and restaurant platforms with a strong focus on UX.",
     icon: Briefcase,
   },
   {
-    year: "2019 — 2021",
-    role: "Frontend Engineer",
-    company: "Tessera Agency",
-    desc: "Specialized in editorial micro-sites, motion-rich landing pages, and CMS-driven marketing platforms.",
+    year: "2021 — 2022",
+    role: "Frontend Developer & Graphic Designer",
+    company: "Various Studios",
+    desc: "Delivered responsive React interfaces and brand identities — logos, social kits, and marketing collateral.",
     icon: Code2,
   },
   {
-    year: "2015 — 2019",
-    role: "BSc Computer Science & Visual Communication",
-    company: "University of the Arts",
-    desc: "Double major focused on the intersection of code, typography, and interaction design.",
+    year: "2018 — 2022",
+    role: "BSc Computer Science",
+    company: "University",
+    desc: "Focused on web technologies, databases, and human–computer interaction alongside self-taught graphic design.",
     icon: GraduationCap,
   },
 ];
@@ -144,43 +134,43 @@ const services = [
   {
     icon: Code2,
     title: "Full Stack Development",
-    desc: "End-to-end web applications built with React, Node.js, Express and MongoDB — fast, accessible, and maintainable.",
+    desc: "End-to-end web apps built with React, Node.js, Express, and MongoDB — fast, accessible, and maintainable.",
   },
   {
     icon: Palette,
-    title: "Brand & Graphic Design",
-    desc: "Identity systems, marketing collateral, and pitch decks that give your product a memorable visual voice.",
+    title: "Graphic Design",
+    desc: "Logos, brand identities, social media kits, and print collateral with a distinctive visual voice.",
   },
   {
     icon: Layers,
-    title: "Product UI / UX",
-    desc: "Design systems, component libraries, and end-to-end product flows that scale with your team.",
+    title: "UI/UX Design",
+    desc: "Wireframes, prototypes, and polished interfaces designed around real user flows and your product goals.",
   },
   {
     icon: Sparkles,
-    title: "Landing Pages",
-    desc: "Premium marketing sites with motion, copy, and conversion craft — engineered for speed and SEO.",
+    title: "Responsive Websites",
+    desc: "Landing pages and marketing sites engineered for speed, SEO, and beautiful behavior on every screen.",
   },
 ];
 
 const testimonials = [
   {
     quote:
-      "Alex is the rare unicorn who can architect a clean Node API in the morning and ship a brand identity by evening. Our product shipped twice as fast.",
-    name: "Maya Chen",
-    role: "Founder, Lumen Analytics",
+      "Robab delivered our e-commerce platform ahead of schedule. The code is clean, the UI is gorgeous, and the admin dashboard is a joy to use.",
+    name: "Aisha Rahman",
+    role: "Founder, Boutique Studio",
   },
   {
     quote:
-      "The taste level is off the charts. Every screen, every micro-interaction felt considered. Our investors literally noticed.",
-    name: "Daniel Park",
-    role: "CEO, Pasipun",
+      "Working with Robab was effortless. They handled the full job portal build — backend, frontend, and design — with real attention to detail.",
+    name: "David Lee",
+    role: "Product Manager, HireNow",
   },
   {
     quote:
-      "Reliable, fast, and a genuinely excellent collaborator. We've worked with Alex on five projects and it's never not been a delight.",
-    name: "Sarah Whitfield",
-    role: "Product Lead, Halo Labs",
+      "Our restaurant site looks premium and converts. Robab understood the brand instantly and shipped a design that felt completely on-point.",
+    name: "Maria Lopez",
+    role: "Owner, Olive & Ember",
   },
 ];
 
